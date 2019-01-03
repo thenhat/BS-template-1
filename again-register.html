@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register form</title>
+    <link rel="stylesheet" href="again.css">
+</head>
+<body>
+<div class="main-content">
+    <form action="" method="post" name="register-form">
+        <div class="row">
+            <div class="col-1">First Name</div>
+            <div class="col-6">
+                <input type="text" id="firstName" name="firstName">
+                <span></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">Last Name</div>
+            <div class="col-6">
+                <input type="text" name="lastName">
+                <span></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">Password</div>
+            <div class="col-6">
+                <input type="password" name="password">
+                <span></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">Confirm Password</div>
+            <div class="col-6">
+                <input type="password" name="confirmPassword">
+                <span></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">Address</div>
+            <div class="col-6">
+                <textarea name="address" cols="50" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">Phone</div>
+            <div class="col-6"><input type="text" name="phone"></div>
+        </div>
+        <div class="row">
+            <div class="col-1">Avatar</div>
+            <div class="col-6"><input type="text" name="avatar"></div>
+        </div>
+        <div class="row">
+            <div class="col-1">Gender</div>
+            <div class="col-6">
+                <select name="gender">
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                    <option value="2">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">Email</div>
+            <div class="col-6"><input type="email" name="email"></div>
+        </div>
+        <div class="row">
+            <div class="col-1">Birthday</div>
+            <div class="col-6"><input type="date" name="birthday"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-6">
+                <input type="button" name="btnSubmit" value="Submit">
+                <input type="reset" name="btnReset" value="Reset">
+            </div>
+        </div>
+    </form>
+</div>
+<script src="again.js"></script>
+</body>
+</html>

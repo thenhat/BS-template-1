@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #change_me {
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            font: 24px Arial;
+            background-color: #939393;
+            width: 100px;
+            border: 1px solid magenta;
+        }
+
+    </style>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<h1>HEllo jquery</h1>
+<input id="MoveUp" type="button" name="MoveUp" value="MoveUp">
+<input id="MoveDown" type="button" name="MoveDown" value="MoveDown">
+<input id="AddColor" type="button" name="AddColor" value="AddColor">
+<input id="Disappear" type="button" name="Disappear" value="Disappear">
+<div id="change_me">Make me</div>
+<script>
+    $(document).ready(function () {
+        $("#MoveUp").click(function () {
+            $("#change_me").animate({
+                top: 30
+            }, 200);
+        });
+        $("#MoveDown").click(function () {
+            $("#change_me").animate({
+                top: 500
+            }, 2000);
+        });
+        $("#AddColor").click(function () {
+            $("#change_me").css({
+                "background": "red",
+                "font-size": "40px"
+            });
+        });
+        $("#Disappear").click(function () {
+            $("#change_me").toggle('slow')
+
+        });
+    });
+</script>
+</body>
+</html>

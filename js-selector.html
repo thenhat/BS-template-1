@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        div {
+            display: block;
+        }
+
+        body {
+            color: #333333;
+            font-family: "Open Sans", sans-serif;
+            font-size: 110%;
+            -webkit-font-smoothing: antialiased;
+
+        }
+
+        .small-1 {
+            max-width: 8.33333%;
+            -ms-flex-preferred-size: 8.33333%;
+            flex-basis: 8.33333%
+        }
+
+        .small-2 {
+            max-width: 16.66667%;
+            -ms-flex-preferred-size: 16.66667%;
+            flex-basis: 16.66667%
+        }
+
+        .small-3 {
+            max-width: 25%;
+            -ms-flex-preferred-size: 25%;
+            flex-basis: 25%
+        }
+
+        .small-4 {
+            max-width: 33.33333%;
+            -ms-flex-preferred-size: 33.33333%;
+            flex-basis: 33.33333%
+        }
+
+        .small-5 {
+            max-width: 41.66667%;
+            -ms-flex-preferred-size: 41.66667%;
+            flex-basis: 41.66667%
+        }
+
+        .small-6 {
+            max-width: 50%;
+            -ms-flex-preferred-size: 50%;
+            flex-basis: 50%
+        }
+
+        .small-7 {
+            max-width: 58.33333%;
+            -ms-flex-preferred-size: 58.33333%;
+            flex-basis: 58.33333%
+        }
+
+        .small-8 {
+            max-width: 66.66667%;
+            -ms-flex-preferred-size: 66.66667%;
+            flex-basis: 66.66667%
+        }
+
+        .small-9 {
+            max-width: 75%;
+            -ms-flex-preferred-size: 75%;
+            flex-basis: 75%
+        }
+
+        .small-10 {
+            max-width: 83.33333%;
+            -ms-flex-preferred-size: 83.33333%;
+            flex-basis: 83.33333%
+        }
+
+        .small-11 {
+            max-width: 91.66667%;
+            -ms-flex-preferred-size: 91.66667%;
+            flex-basis: 91.66667%
+        }
+
+        .small-12 {
+            max-width: 100%;
+            -ms-flex-preferred-size: 100%;
+            flex-basis: 100%
+        }
+
+        @media screen and (min-width: 550px) {
+            .medium-1 {
+                max-width: 8.33333%;
+                -ms-flex-preferred-size: 8.33333%;
+                flex-basis: 8.33333%
+            }
+
+            .medium-2 {
+                max-width: 16.66667%;
+                -ms-flex-preferred-size: 16.66667%;
+                flex-basis: 16.66667%
+            }
+
+            .medium-3 {
+                max-width: 25%;
+                -ms-flex-preferred-size: 25%;
+                flex-basis: 25%
+            }
+
+            .medium-4 {
+                max-width: 33.33333%;
+                -ms-flex-preferred-size: 33.33333%;
+                flex-basis: 33.33333%
+            }
+
+            .medium-5 {
+                max-width: 41.66667%;
+                -ms-flex-preferred-size: 41.66667%;
+                flex-basis: 41.66667%
+            }
+
+            .medium-6 {
+                max-width: 50%;
+                -ms-flex-preferred-size: 50%;
+                flex-basis: 50%
+            }
+
+            .medium-7 {
+                max-width: 58.33333%;
+                -ms-flex-preferred-size: 58.33333%;
+                flex-basis: 58.33333%
+            }
+
+            .medium-8 {
+                max-width: 66.66667%;
+                -ms-flex-preferred-size: 66.66667%;
+                flex-basis: 66.66667%
+            }
+
+            .medium-9 {
+                max-width: 75%;
+                -ms-flex-preferred-size: 75%;
+                flex-basis: 75%
+            }
+
+            .medium-10 {
+                max-width: 83.33333%;
+                -ms-flex-preferred-size: 83.33333%;
+                flex-basis: 83.33333%
+            }
+
+            .medium-11 {
+                max-width: 91.66667%;
+                -ms-flex-preferred-size: 91.66667%;
+                flex-basis: 91.66667%
+            }
+
+            .medium-12 {
+                max-width: 100%;
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%
+            }
+        }
+
+        @media screen and (min-width: 850px) {
+            .large-1 {
+                max-width: 8.33333%;
+                -ms-flex-preferred-size: 8.33333%;
+                flex-basis: 8.33333%
+            }
+
+            .large-2 {
+                max-width: 16.66667%;
+                -ms-flex-preferred-size: 16.66667%;
+                flex-basis: 16.66667%
+            }
+
+            .large-3 {
+                max-width: 25%;
+                -ms-flex-preferred-size: 25%;
+                flex-basis: 25%;
+            }
+
+            .large-4 {
+                max-width: 33.33333%;
+                -ms-flex-preferred-size: 33.33333%;
+                flex-basis: 33.33333%
+            }
+
+            .large-5 {
+                max-width: 41.66667%;
+                -ms-flex-preferred-size: 41.66667%;
+                flex-basis: 41.66667%
+            }
+
+            .large-6 {
+                max-width: 50%;
+                -ms-flex-preferred-size: 50%;
+                flex-basis: 50%
+            }
+
+            .large-7 {
+                max-width: 58.33333%;
+                -ms-flex-preferred-size: 58.33333%;
+                flex-basis: 58.33333%
+            }
+
+            .large-8 {
+                max-width: 66.66667%;
+                -ms-flex-preferred-size: 66.66667%;
+                flex-basis: 66.66667%
+            }
+
+            .large-9 {
+                max-width: 75%;
+                -ms-flex-preferred-size: 75%;
+                flex-basis: 75%
+            }
+
+            .large-10 {
+                max-width: 83.33333%;
+                -ms-flex-preferred-size: 83.33333%;
+                flex-basis: 83.33333%
+            }
+
+            .large-11 {
+                max-width: 91.66667%;
+                -ms-flex-preferred-size: 91.66667%;
+                flex-basis: 91.66667%
+            }
+
+            .large-12 {
+                max-width: 100%;
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%
+            }
+        }
+
+        .col-inner {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+        }
+
+        .col {
+            position: relative;
+            margin: 0;
+            padding: 0 15px 20px;
+            width: 100%;
+            border: 1px solid #8a898c;
+        }
+
+        .recommendations .recommendations-section-title {
+            padding: .5rem 0;
+            border-bottom: 2px solid #4ab7ce;
+            font-weight: 400;
+            display: block;
+            width: 100%;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+        }
+
+        h4 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.125em;
+        }
+        .recommendations .recommendations-section-title a {
+            color: #000;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: #f99b1c;
+
+        }
+        .company a:hover{
+            color: #fff;
+
+        }
+
+
+        .table-recommendations {
+            color: #8f9194;
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 1em;
+            border-color: #ececec;
+            border-spacing: 0;
+        }
+
+        thead {
+            display: table-header-group;
+            vertical-align: middle;
+            border-color: inherit;
+        }
+
+        .table-recommendations tbody {
+            background: #eeeeee;
+            border: 1px solid #494949;
+        }
+
+        .table-recommendations .company {
+            width: 20%;
+        }
+
+        .table-recommendations td {
+            padding: 0.5rem;
+            border-bottom: 1px dashed #3d3d3d;
+        }
+
+        th, td {
+            padding: .5em;
+            text-align: left;
+            border-bottom: 1px solid #ececec;
+            line-height: 1.3;
+            font-size: .9em;
+        }
+
+        .table-recommendations .company a {
+            font-size: 1.2rem;
+        }
+
+        .table-recommendations .price {
+            width: 25%;
+            text-align: right;
+        }
+
+        .table-recommendations td {
+            padding: 0.5rem;
+            border-bottom: 1px dashed #3d3d3d;
+        }
+
+        .table-recommendations .last-child td {
+            border-bottom: 1px solid #eeeeee;
+        }
+        .table-recommendations .recommendation {
+            width: 40%;
+            text-align: right;
+        }
+
+        a.btn-recommend {
+            min-width: 80px;
+            display: inline-block;
+            padding: 2px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .btn-recommend {
+            color: #fff !important;
+            font-size: 1.2rem;
+            margin: 0;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+<div class="col featured-rec medium-3 small-12 large-3">
+    <div class="col-inner">
+
+        <div class="recommendations">
+            <h4 class="recommendations-section-title"><a href=""> Khuyến nghị mới nhất</a></h4>
+            <table class="table-recommendations">
+                <thead>
+                <tr>
+                    <th class="company">Công ty</th>
+                    <th class="price">Giá</th>
+                    <th class="recommendation">Buy/Hold/Sell</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="company"><a
+                            href="https://govalue.vn/cong-ty/tong-cong-ty-khi-viet-nam-ctcp-ma-gas/">GAS</a></td>
+                    <td class="price">
+                        95
+                    </td>
+                    <td class="recommendation">
+                        <a href="https://govalue.vn/nghien-cuu/gas-than-trong/" class="btn-recommend"
+                           style="background: #dd3333">SELL</a>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="company"><a href="https://govalue.vn/cong-ty/ctcp-container-viet-nam-ma-vsc/">VSC</a>
+                    </td>
+                    <td class="price">
+                        40.15
+                    </td>
+                    <td class="recommendation">
+                        <a href="https://govalue.vn/nghien-cuu/vsc-tinh-tao-don-nhan-co-hoi/" class="btn-recommend"
+                           style="background: #35618b">HOLD</a>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="company"><a href="https://govalue.vn/cong-ty/ctcp-sua-vinamlik-ma-vnm/">VNM</a></td>
+                    <td class="price">
+                        120
+                    </td>
+                    <td class="recommendation">
+                        <a href="https://govalue.vn/nghien-cuu/co-phieu-vnm/" class="btn-recommend"
+                           style="background: #dd3333">SELL</a>
+
+                    </td>
+                </tr>
+                <tr class="last-child">
+                    <td class="company" ><a href="https://govalue.vn/cong-ty/ctcp-loc-hoa-dau-binh-son-ma-bsr/">BSR</a>
+                    </td>
+                    <td class="price">
+                        16
+                    </td>
+                    <td class="recommendation">
+                        <a href="https://govalue.vn/nghien-cuu/co-phieu-bsr/" class="btn-recommend"
+                           style="background: #2eb549;">BUY</a>
+
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

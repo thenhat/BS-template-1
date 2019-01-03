@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand">LOGO</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav -item"><a class="nav-link">Link 1</a></li>
+                <li class="nav-item"><a class="nav-link dropdown-toggle" href="#" id="dropdown_menu"
+                                        data-toggle="toggle">Link 2</a>
+
+                    <div class="dropdown-menu"
+                         aria-labelledby="dropdown_menu">
+                        <a class="dropdown-item" href="#">Link 2.1</a>
+                        <a class="dropdown-item" href="#">Link 2.2</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link">Link 3</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="demo-slider" class="carousel slide" data-side="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.w3schools.com/bootstrap4/la.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.w3schools.com/bootstrap4/chicago.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.w3schools.com/bootstrap4/ny.jpg" alt="">
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#demo-slider" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo-slider" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <div class="row my-3">
+        <div class="col-sm-8 col-sm-3">
+            <div class="container">
+                <h1>Page Heading
+                    <small>Secondary Text</small>
+                </h1>
+                <hr>
+                <div>
+                    <h2 class="text-primary">Blog Post Title</h2>
+                    <h4>by <span class="text-primary">Start Bootstrap</span></h4>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> Powered on August 28, 2013 at 10:00 PM</p>
+                    <hr>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBLl7Jpz8slcFyQrJZYMQ_Uyv0Z1_S-vM1xT6M8MynSr6VNsur">
+                    <hr>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <button class="btn btn-primary">Read More
+                        <small><i class="fa fa-chevron-right" aria-hidden="true"></i></small>
+                    </button>
+                </div>
+                <hr>
+                <div>
+                    <h2 class="text-primary">Blog Post Title</h2>
+                    <h4>by <span class="text-primary">Start Bootstrap</span></h4>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> Powered on August 28, 2013 at 10:00 PM</p>
+                    <hr>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBLl7Jpz8slcFyQrJZYMQ_Uyv0Z1_S-vM1xT6M8MynSr6VNsur">
+                    <hr>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <button class="btn btn-primary">Read More
+                        <small><i class="fa fa-chevron-right" aria-hidden="true"></i></small>
+                    </button>
+                </div>
+                <hr>
+                <div>
+                    <h2 class="text-primary">Blog Post Title</h2>
+                    <h4>by <span class="text-primary">Start Bootstrap</span></h4>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> Powered on August 28, 2013 at 10:00 PM</p>
+                    <hr>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBLl7Jpz8slcFyQrJZYMQ_Uyv0Z1_S-vM1xT6M8MynSr6VNsur">
+                    <hr>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <button class="btn btn-primary">Read More
+                        <small><i class="fa fa-chevron-right" aria-hidden="true"></i></small>
+                    </button>
+                </div>
+                <hr>
+                <!--Phan trang-->
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-3">
+            <div class="card">
+                <div class="card-header">
+                    Search header<br>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Enter Name Here" id="mail" name="email">
+                        <div class="input-group-append">
+                            <span class="input-group-text"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-header">
+                    2
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-header">
+                    Search<br>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <!--<div class="input-group-append">-->
+                            <!--<button class="btn btn-success" type="submit">Go</button>-->
+                        <!--</div>-->
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+    <ul class="nav nav-tabs">
+    <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#link1">Link 1</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#link2">Link 2</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#link3">Link 3</a>
+    </li>
+    </ul>
+    <div class="tab-content">
+    <div class="tab-pane container" id="link1">Link 1</div>
+    <div class="tab-pane container" id="link2">Link 2</div>
+    <div class="tab-pane container" id="link3">Link 3</div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #click{
+            background-color: steelblue;
+            padding: 50px;
+            width: 220px;
+            font-size: 30px;
+            text-align: center;
+        }
+        #change_me {
+            padding: 20px;
+            background-color: green;
+            width: 280px;
+            display: none;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+</head>
+<body>
+<h1>HEllo jquery</h1>
+<div id="click">Show me the me</div>
+<div id="change_me">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Mandril.jpg/280px-Mandril.jpg">
+</div>
+<script>
+    $(document).ready(function () {
+        $("#click").click(function () {
+            $("img").fadeIn(5000);
+            $("#change_me").slideToggle('slow');
+    });
+    });
+
+    function Mutyp() {
+        
+    }
+</script>
+
+</body>
+</html>
